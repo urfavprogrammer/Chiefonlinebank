@@ -1,0 +1,64 @@
+.appHeader{
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: env(safe-area-inset-top);
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    color: #27173E;
+    border-bottom: 1px solid #DCDCE9;
+}
+.bg-primary{
+    background: #6236FF;
+}
+.text-light{
+    color: #FFF;
+}
+
+.appHeader .left{
+    left: 10px;
+    top: 0;
+}
+.appHeader .right{
+    right: 10px;
+    top: 0;
+}
+
+.appHeader .left, .appHeader .right{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.appHeader .left .headerButton, .appHeader .right .headerButton{
+    min-width: 36px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    position: relative;
+}
+ .appHeader .text-light .headerButton{
+    color: #FFF;
+}
+
+.appHeader .pageTitle{
+    font-size: 17px;
+    font-weight: 500;
+    padding:0 10px;
+}
+.appHeader .pageTitle .logo{
+    max-height: 24px;
+}
+.imaged.w32 {
+    width: 32px !important;
+}
+.imaged {
+    height: auto;
+    border-radius: 10px;
+}
