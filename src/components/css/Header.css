@@ -12,6 +12,30 @@
     color: #27173E;
     border-bottom: 1px solid #DCDCE9;
 }
+.appHeader:before {
+    content: '';
+    height: env(safe-area-inset-top);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99999;
+    background: #FFF;
+}
+.appHeader.bg-primary:before {
+    background: #6236FF !important;
+}
+.appHeader.bg-primary,
+.appHeader.bg-secondary,
+.appHeader.bg-success,
+.appHeader.bg-warning,
+.appHeader.bg-danger,
+.appHeader.bg-info,
+.appHeader.bg-light,
+.appHeader.bg-dark {
+    border: 0;
+}
 .bg-primary{
     background: #6236FF;
 }
@@ -54,6 +78,33 @@
 }
 .appHeader .pageTitle .logo{
     max-height: 24px;
+}
+.appHeader .badge{
+    min-width: 16px;
+    height: 16px;
+    line-height: 9px !important;
+    font-size: 10px;
+    padding: 0 4px !important;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+}
+.badge {
+    font-size: 12px;
+    line-height: 1em;
+    border-radius: 100px;
+    letter-spacing: 0;
+    height: 22px;
+    min-width: 22px;
+    width: auto;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.badge{
+    background: #FF396F;
 }
 .imaged.w32 {
     width: 32px !important;
